@@ -1,0 +1,313 @@
+/*Default*/
+
+@font-face {
+    font-family: 'Press Start K';
+    src: url(/font/prstartk.ttf);
+}
+
+html{
+    font-family: 'Press Start K', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    margin: auto;
+    background-color: black;
+}
+.wrapper{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: #f9ed3f;
+    font-size: 30px;
+}
+
+h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h5{
+    color: white;
+    font-size: 8px;
+}
+
+p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+section:after{
+    border-bottom: 1px dotted #f9ed3f;
+    content: "";
+    display: block;
+}
+
+
+/*Header*/
+header{
+    justify-content: space-between;
+}
+
+.nav{
+    text-align: center;
+}
+
+
+.nav ul li{
+    display: inline-block;
+    padding: 0 40px 100px 40px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: #f9ed3f;
+}
+
+/*Home*/
+#home{
+    margin: 0 0 150px 0;
+}
+
+#pacmanlogo{
+    width: 700px;
+    margin: 0 0 100px 0;
+    
+}
+
+.home_animation img:nth-child(5){
+    transform: rotateY(180deg);
+}
+
+.home_animation{
+    
+    animation-name: home_animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes home_animation{
+    0% {
+        transform: translate(900px, 0px); 
+    }
+
+    100% {
+        transform: translate(-900px, 0px); 
+}
+}
+
+.home_animation img{
+    width: 50px;
+}
+
+#home h4{
+    margin: 70px 0 130px 0;
+    animation-name: insertcoin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes insertcoin{
+    100% {
+        color: white;
+    }
+
+    0%{
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+/*High Scores*/
+#highscores h3{
+    color: #f9ed3f;
+    margin: 150px 0 50px 0;
+}
+
+#highscores p{
+    margin: 0 0 50px 0;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+table th {
+    padding: 0 100px 50px 100px;
+    color: white;
+    font-size: 20px;
+}
+table td {
+    padding: 0 0 10px 0;
+    font-size: 20px;
+}
+
+
+table tr:nth-child(4n-2){
+    color: #FFA002;
+}
+
+table tr:nth-child(4n-1){
+    color: #FF0401;
+}
+
+table tr:nth-child(4n){
+    color: #01F8F8;
+}
+
+table tr:nth-child(4n+1){
+    color: #FF60B0;
+}
+
+
+/*How to Play*/
+#howtoplay{
+    margin: 150px 0 150px 0;
+}
+
+.howtoplay_animation{
+    margin: 0 0 50px 0;
+}
+
+.howtoplay_animation img{
+    width: 50px;
+}
+
+.howtoplay_animation{
+    animation-name: howtoplay_animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes howtoplay_animation{
+    0% {
+        transform: translate(-900px, 0px); 
+    }
+
+    100% {
+        transform: translate(900px, 0px); 
+}
+}
+
+#howtoplay h4{
+    margin: 0 0 50px 0;
+}
+
+#howtoplay span{
+    color: #f9ed3f;
+    text-transform: uppercase;
+}
+
+#howtoplay p{
+    text-transform: lowercase;
+    padding: 0 250px 0px 250px;
+    margin: 0 0 150px 0;
+    line-height: 130%;
+}
+
+/*Players*/
+#players{
+    margin: 150px 0 200px 0;
+}
+
+#players h4{
+    padding: 10px 0 0 0;
+}
+
+.players{
+    margin: 0 230px 0 230px;
+    padding: 0 0px 50px 0px;
+}
+
+.players img{
+    width: 50px;  
+}
+
+.players table{
+    margin: auto;
+}
+
+.players table tr{
+    text-align: left;
+    font-size: 20px;
+}
+
+.players table tr:nth-of-type(1){
+    color: #FF0401;
+}
+
+.players table tr:nth-of-type(2){
+    color: #FF60B0;
+}
+
+.players table tr:nth-of-type(3){
+    color: #01F8F8;
+}
+
+.players table tr:nth-of-type(4){
+    color: #FFA002;
+}
+
+.players table td:nth-child(3){
+    margin: 100px;
+}
+
+
+
+.points{
+    margin: 0 150px 0 150px;
+}
+
+.points div{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.points p{
+    margin: 15px 0px 0 0px;
+}
+
+.points img{
+    width: 50px;
+}
+
+.pts_50{
+    margin: 15px 0 0 0;
+    background-color: #f9ed3f;
+    width: 20px;
+    height: 20px;
+}
+
+.pts_10{
+    margin: 20px 0 0 0;
+    background-color: #f9ed3f;
+    width: 10px;
+    height: 10px;
+}
+
+
+#players:after{
+    border-bottom: none;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
